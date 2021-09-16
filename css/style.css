@@ -1,8 +1,6 @@
-/* selector{ Elemento al que vamos a aplicar estilos
-    propiedad:valor;
-    propiedad2:valor
-} 
- */
-
-/* Test new repo */
-
+[href*="e"]{
+    background-color: aqua;
+}
+[lang|="es"]{ /* Tiene que coincidir exáctamente al principio, no importa que le preceda */
+    background-color: lightblue
+}
