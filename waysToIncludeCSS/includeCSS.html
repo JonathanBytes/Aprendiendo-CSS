@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Incluir CSS en HTML</title> 
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Formas de incluir CSS en un documento HTML</h1>
+    <p>Estas son las diferentes formas de incluir CSS en HTML:</p>
+    <ul>
+        <li>Usando el método link en la etiqueta &lt;head&gt;</li>
+        <p>Este es el método más recomendable, consiste en incluir la etiqueta &lt;link&gt; con los parámetros "rel" y "href" donde el primero se referirá a que se trata de una hoja de estilos y el segundo la dirección del archivo, con extensión .css, que contiene los estilos. <br> 
+        La forma de escribirse es la siguiente:</p>
+        <code id=code>
+            &lt;link rel="stylesheet" href="\css\style.css"&gt;
+        </code>
+        <br> <br>
+        <li>Usando la etiqueta style dentro de la etiqueta &lt;head&gt;</li>
+        <p>Para este caso el estilo es aplicado dentro de un documento HTML y solo dentro del mismo, un ejemplo sería el siguiente:</p>
+        <pre>
+        <code id=code>
+          &lt;style&gt;
+            body {
+              background-color: slateblue;
+            }
+          &lt;/style&gt;
+        </code>
+        </pre>
+        <p>Solo se debe usar en casos muy concretos en donde no se puede tener un archivo externo, por ejemplo en un correo electrónico</p>
+        <li>Utilizar CSS en línea</li>
+        <p>Se utiliza el atributo <code id=code>style</code> dentro de una etiqueta, se considera muy mala práctica, se suele usar en casos de estilos dinámicos con JavaScript.</p>
+        <pre><code id=code>
+        &lt;h2 style="background-color: teal" &gt;
+        </code></pre>
+        <li>Usar la regla import dentro de la etiqueta &lt;head&gt;</li>
+        <p>Funciona perfectamente en general, sin embargo es más tardío y la carga es asincrónica, es decir, la página cargará y mientras tanto se aplicarán los estilos. La página se verá de una forma y una vez los estilos estén listos, se verán. No recomendado.</p>
+        <pre><code id=code>
+        @import url(css/styles.css);
+        </code></pre>
+    </ul>
+    <footer>
+      <ul>
+        <li><a href="../index.html">Índice</a></li>
+      </ul>
+    </footer>
+</body>
+</html>
