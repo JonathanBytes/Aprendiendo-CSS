@@ -2,5 +2,8 @@
     background-color: aqua;
 }
 [lang|="es"]{ /* Tiene que coincidir exáctamente al principio, no importa que le preceda */
-    background-color: lightblue
+    background-color: lightblue;
+}
+pre{
+  background-color: lightgray;
 }

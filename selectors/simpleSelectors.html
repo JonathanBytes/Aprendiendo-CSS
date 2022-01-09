@@ -10,16 +10,49 @@
     <h1>Selectores simples</h1>
     <p>Dentro de esta categoría se encierran los siguientes selectores.</p>
     <h2>Selectores elementales</h2>
-    <h3>Selector Universal</h3>
+    <h3 ><a name="universalSelector">Selector Universal </a></h3>
     <p>Consisten en un *:
     <pre><code id=code>
     *{
       background-color: pink;
     }
     </code></pre>
-    El estilo se aplicará a todos los elementos.</p>
-    <h3>Selector de tipo o etiqueta</h3>
-    <h2>Selectores de atributo</h2>
+    El estilo se aplicará a todos los elementos. No es recomendable usarlo para cosas que se ven, como por ejemplo un <code>margin: 0</code>.</p>
+    
+    <h3><a name=tagSelector>Selector de tipo o etiqueta </a></h3>
+    <p>Consisten en usar el nombre de la etiqueta a la cual queremos aplicarle el estilo:
+    <pre><code>
+    h1{
+      background-color: yellow;
+    }
+    </code></pre>
+    Es un selector que se usa en los reseteos de estilos o también llamado normalizar 
+    estilos</p>
+    <h2>Selectores de atributo </h2>
+    <h3><a name="idSelectors">Selector de id</a></h3>
+    <p>Se usa el id del elemento, este es un atributo dentro de la etiqueta HTML:</p>
+    <pre><code>
+      &lt;h1 id="title"&gt;Título&lt;/h1&gt;
+    </code></pre>
+    <p>Para seleccionar el id de este elemento h1 se haría lo siguiente en CSS:</p>
+    <pre><code>
+    #title{
+      background-color: lightcian;
+    }
+    </code></pre>
+    <p>No es recomendable usar el selector de id para aplicar estilos, debido a la especifisidad de este.</p>
+    <h3><a name="classSelectors">Selector de clase</a></h3>
+    <p>Se utiliza la clase del elemento, es el más recomendable a usar, su uso es similar al uso de las id.</p>
+    <pre><code>
+      &lt;h1 class="title"&gt;Título&lt;/h1&gt;
+    </code></pre>
+    <p>Para seleccionar la clase de este elemento h1 se haría lo siguiente en CSS:</p>
+    <pre><code>
+    .title{
+      background-color: lightcian;
+    }
+    </code></pre>
+    <h3><a name="othersAtributes">Otros atributos</a></h3>
     <footer>
       <ul>
         <li><a href="../index.html">Índice</a></li>
