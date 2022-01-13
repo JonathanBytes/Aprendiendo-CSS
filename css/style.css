@@ -1,9 +1,15 @@
-[href*="e"]{
-    background-color: aqua;
+[href*="/"]{
+    color: #3EA5FD;
+}
+[href*="."]{
+    color: #3EA5FD;
 }
 [lang|="es"]{ /* Tiene que coincidir exáctamente al principio, no importa que le preceda */
-    background-color: lightblue;
+    background-color: #181818;
 }
 pre{
-  background-color: lightgray;
+  background-color: #212121;
+}
+body{
+  color: white;
 }
