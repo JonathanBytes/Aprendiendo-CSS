@@ -53,7 +53,33 @@
     }
     </code></pre>
     <h3><a name="othersAtributes">Otros atributos</a></h3>
-    <p>Hola qué tal</p>
+    <p>Para estos atributos se utilizan las llaves: <code>[]</code> <br> 
+    Al aplicar estilos de esta forma logramos aplicar estilo a todos los elementos que <strong>contengan</strong> el atributo que hemos indicado dentro de las llaves. Por ejemplo:
+    </p>
+    <pre><code>
+    [href]{
+      color: blue;
+    }
+    </code></pre>
+    <p>Sin embargo se puede utilizar de otras formas, como por ejemplo incluir el valor del atributo, de esta forma:</p>
+    <pre><code>
+    [href="https//google.com"]{
+      color: black;
+    }
+    </code></pre>
+    <p>Es importante resaltar que el valor del atributo <strong>debe</strong> estar entre comillas. <br>
+    También se puede incluir una condición, que compruebe si el atributo empieza por ese valor, de esta forma:
+    </p>
+    <pre><code>
+    [href^=valor]{
+      color: yellow;
+    }
+    </code></pre>
+    <p>Este fragmento de CSS comprobará si existe un elemento con el atributo href que su valor empiece por valor, por ejemplo, el atributo <code>href=valor-imagen</code> será escogido para aplicar el estilo, sin embargo, los siguientes casos no son válidos:</p>
+    <pre><code>
+    &lt;h1 href=test-valor-imagen&gt;Test title&lt;/h1&gt; 
+    &lt;a href=hola-valor&gt;Link test&lt;/a&gt; 
+    </code></pre>
     <footer>
       <ul>
         <li><a href="../index.html">Índice</a></li>

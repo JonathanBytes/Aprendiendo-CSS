@@ -1,6 +1,6 @@
-[href*="/"]{
-    color: #3EA5FD;
-}
+/* [href*="/"]{ */
+/*     color: #3EA5FD; */
+/* } */
 [href*="."]{
     color: #3EA5FD;
 }
