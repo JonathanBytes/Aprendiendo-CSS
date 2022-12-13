@@ -4,11 +4,11 @@
 [href*="."]{
     color: #3EA5FD;
 }
-[lang|="es"]{ /* Tiene que coincidir exáctamente al principio, no importa que le preceda */
-    background-color: #181818;
+[lang|="es"]{ /* Tiene que coincidir exáctamente al principio, no importa qué le preceda */
+    background-color: #202020;
 }
 pre{
-  background-color: #212121;
+  background-color: #282828;
 }
 body{
   color: white;
