@@ -1,15 +1,60 @@
 /* [href*="/"]{ */
 /*     color: #3EA5FD; */
 /* } */
-[href*="."]{
-    color: #3EA5FD;
+[href*="."] {
+  color: #3EA5FD;
 }
-[lang|="es"]{ /* Tiene que coincidir exáctamente al principio, no importa qué le preceda */
-    background-color: #202020;
+
+[lang|="es"] {
+  /* Tiene que coincidir exáctamente al principio, no importa qué le preceda */
+  /* background-color: #202020; */
 }
-pre{
-  background-color: #282828;
-}
-body{
+
+pre {
   color: white;
+  background-color: #282828;
+  max-width: fit-content;
+  padding-right: 5%;
+}
+
+body {
+  font-family: 'Montserrat';
+  padding: 0 2rem;
+  /* color: white; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-family: 'Yeseva One';
+  width: fit-content;
+  /* background-color: dodgerblue; */
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.mainTitle {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  width: fit-content;
+  font-family: 'IBM Plex Mono';
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  padding: 1rem 2rem;
+  list-style: circle rgba(0, 0, 0, 0.15);
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.header-logo {
+  width: 100%;
 }
