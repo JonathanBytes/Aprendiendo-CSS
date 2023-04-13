@@ -1,12 +1,13 @@
 :root {
   --black: #282828;
   --blue: #6ba4a7;
-  --white: #fbf1c7;
+  --white: #fff;
+  --animation-duration: 0.15s
 }
 
 /* Bloques de código */
 pre {
-  color: white;
+  color: var(--white);
   background-color: var(--black);
   max-width: fit-content;
   padding-right: 5%;
@@ -74,7 +75,7 @@ a {
   background-color: var(--blue);
   visibility: hidden;
   transform: scaleX(0);
-  transition: all 0.25s ease-in-out 0s;
+  transition: all var(--animation-duration) ease-in-out 0s;
   border-radius: 6px;
 }
 
@@ -105,7 +106,7 @@ a {
 /* Efecto de hover para la imágen */
 .home img {
   width: 180px;
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity var(--animation-duration) ease-in-out;
 }
 
 .home img:hover {
@@ -114,8 +115,8 @@ a {
 
 /* Efecto de hover para el btn Contacto */
 .btn {
-  transition: color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out;
+  transition: color var(--animation-duration) ease-in-out;
+  transition: background-color var(--animation-duration) ease-in-out;
 }
 
 .btn:hover {
