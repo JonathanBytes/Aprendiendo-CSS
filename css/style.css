@@ -1,28 +1,24 @@
-/* [href*="/"]{ */
-/*     color: #3EA5FD; */
-/* } */
-[href*="."] {
-  color: #3EA5FD;
+:root {
+  --black: #282828;
+  --blue: #6ba4a7;
+  --white: #fbf1c7;
 }
 
-[lang|="es"] {
-  /* Tiene que coincidir exáctamente al principio, no importa qué le preceda */
-  /* background-color: #202020; */
-}
-
+/* Bloques de código */
 pre {
   color: white;
-  background-color: #282828;
+  background-color: var(--black);
   max-width: fit-content;
   padding-right: 5%;
 }
 
+/* Tipo de letra principal y margen lateral */
 body {
   font-family: 'Montserrat';
-  padding: 0 2rem;
-  /* color: white; */
+  padding: 0 10vw;
 }
 
+/* Estilo para los títulos */
 h1,
 h2,
 h3,
@@ -38,23 +34,92 @@ h6 {
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-.mainTitle {
+/* Centrar en la página el título principal */
+main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-ul {
-  width: fit-content;
-  font-family: 'IBM Plex Mono';
-  border: 2px solid rgba(0, 0, 0, 0.15);
-  padding: 1rem 2rem;
-  list-style: circle rgba(0, 0, 0, 0.15);
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 a {
-  text-decoration-line: none;
+  text-decoration: none;
+  color: black;
 }
 
-.header-logo {
+.nav li {
+  position: relative;
+}
+
+.nav a::before {
+  content: "";
+  position: absolute;
   width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--blue);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.25s ease-in-out 0s;
+  border-radius: 6px;
+}
+
+.nav a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.nav li {
+  display: inline-block;
+  margin: 7px 15px;
+}
+
+.btn {
+  background-color: var(--black);
+  color: white;
+  padding: 10px 2rem;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Efecto de hover para la imágen */
+.home img {
+  width: 180px;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.home img:hover {
+  opacity: 0.6;
+}
+
+/* Efecto de hover para el btn Contacto */
+.btn {
+  transition: color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--blue);
+  color: var(--white);
+
 }
