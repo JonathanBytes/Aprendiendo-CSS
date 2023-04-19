@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: hsl(48, 18%, 83%);
+}
+
+.examples {
+    padding: 3rem;
+    max-width: 1200px;
+    display: flex;
+    gap: clamp(2rem, 8vw, 4rem);
+}
+
+button {
+    background: transparent;
+    border: 10px solid var(--button-color, #000);
+    border-radius: 1rem;
+}
+
+.button-three {
+    --button-color: black;
+    overflow: hidden;
+}
+
+.button-three .hamburger {
+    transition: translate 0.25s, rotate 0.5s;
+}
+
+.button-three[aria-expanded="true"] .hamburger {
+    translate: 10px -10px;
+    rotate: 0.125turn;
+}
+
+.button-three .line {
+    transition: 0.25s;
+    stroke-dasharray: 60 31 60 300;
+}
+
+.button-three[aria-expanded="true"] .line {
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+}
