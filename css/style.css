@@ -41,6 +41,10 @@ h6 {
   /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
 }
 
+.btn {
+  font-family: 'IBM Plex Mono';
+}
+
 /* Centrar en la página el título principal */
 main {
   display: flex;
@@ -52,7 +56,9 @@ main {
 }
 
 main p {
-  max-width: 40rem;
+  font-size: 1.3rem;
+  max-width: 50rem;
+  margin-bottom: 8rem;
 }
 
 .home {
@@ -186,8 +192,6 @@ footer .footer-logo img {
   transition: opacity var(--animation-duration) ease-in-out;
 }
 
-
-
 footer .footer-logo img:hover {
   opacity: 0.6;
 }
@@ -196,7 +200,7 @@ footer .footer-logo p {
   color: var(--white);
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 440px) {
 
   footer .footer-logo img {
     width: 80vw;
@@ -212,9 +216,7 @@ footer .footer-logo p {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: 2rem auto 8rem auto;
-  /* padding: 0 5rem; */
 }
-
 
 .main-text,
 .aux-text {
@@ -232,22 +234,27 @@ footer .footer-logo p {
 .main-text>* {
   font-size: 3.35rem;
   text-align: left;
-  padding-left: 2rem;
+}
+
+.main-text h1,
+.main-text p {
+  padding-left: 1rem;
 }
 
 .main-text h1 {
   margin: 0;
 }
 
-.main-text span {
+.main-text h1 span {
   display: block;
   font-size: 6rem;
 }
 
 .main-text p {
   margin: 0;
+  display: inline;
+  font-display: swap;
 }
-
 
 .aux-text i {
   text-align: center;
@@ -284,14 +291,14 @@ footer .footer-logo p {
   }
 }
 
-@media only screen and (max-width: 515px) {
+@media only screen and (max-width: 525px) {
   .main-text>* {
     text-align: center;
-    font-size: 9vw;
+    font-size: 8vw;
   }
 
-  .main-text span {
-    font-size: 18vw;
+  .main-text h1 span {
+    font-size: 16vw;
   }
 
   .aux-text i svg {
