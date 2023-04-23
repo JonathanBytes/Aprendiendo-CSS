@@ -59,6 +59,8 @@ main p {
   font-size: 1.3rem;
   max-width: 50rem;
   margin-bottom: 8rem;
+  word-spacing: 0.3rem;
+  line-height: 2rem;
 }
 
 .home {
