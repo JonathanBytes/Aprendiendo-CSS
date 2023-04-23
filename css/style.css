@@ -186,6 +186,8 @@ footer .footer-logo img {
   transition: opacity var(--animation-duration) ease-in-out;
 }
 
+
+
 footer .footer-logo img:hover {
   opacity: 0.6;
 }
@@ -194,16 +196,105 @@ footer .footer-logo p {
   color: var(--white);
 }
 
+@media only screen and (max-width: 420px) {
+
+  footer .footer-logo img {
+    width: 80vw;
+  }
+
+}
+
 /* Hero Styles */
 
 .hero {
-  border: 1px solid violet;
   width: 100%;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin: 2rem auto 8rem auto;
+  /* padding: 0 5rem; */
 }
+
 
 .main-text,
 .aux-text {
-  border: 1px solid teal;
+  padding: 1rem;
+}
+
+.aux-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.main-text>* {
+  font-size: 3.35rem;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.main-text h1 {
+  margin: 0;
+}
+
+.main-text span {
+  display: block;
+  font-size: 6rem;
+}
+
+.main-text p {
+  margin: 0;
+}
+
+
+.aux-text i {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.aux-text i svg {
+  width: 3rem;
+}
+
+.aux-text h2 {
+  margin: 1rem 0;
+}
+
+.aux-text p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 815px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .aux-text {
+    text-align: center;
+  }
+
+  .main-text>* {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .main-text>* {
+    text-align: center;
+    font-size: 9vw;
+  }
+
+  .main-text span {
+    font-size: 18vw;
+  }
+
+  .aux-text i svg {
+    width: 15vw;
+  }
 }
