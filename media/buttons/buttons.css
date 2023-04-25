@@ -7,8 +7,11 @@
 
 button {
     background: transparent;
-    border: 10px solid var(--button-color, #000);
-    border-radius: 1rem;
+    padding: 0;
+    border: 1.5px solid var(--button-color, #000);
+    border-radius: 0.5em;
+    width: 40px;
+    aspect-ratio: 1;
 }
 
 .button-three {
@@ -17,16 +20,16 @@ button {
 }
 
 .button-three .hamburger {
-    transition: translate 0.25s, rotate 0.5s;
+    transition: translate .25s, rotate .5s;
 }
 
 .button-three[aria-expanded="true"] .hamburger {
-    translate: 10px -10px;
+    translate: 1px -2px;
     rotate: 0.125turn;
 }
 
 .button-three .line {
-    transition: 0.25s;
+    transition: .3s;
     stroke-dasharray: 60 31 60 300;
 }
 

@@ -68,6 +68,10 @@ main p {
   align-items: center;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .nav {
   list-style: none;
   padding: 0;
@@ -114,6 +118,42 @@ a {
   color: white;
   padding: 10px 2rem;
   border-radius: 8px;
+}
+
+button {
+  background: transparent;
+  padding: 0;
+  /* border: 1.5px solid var(--button-color, #000);
+  border-radius: 0.5em; */
+  border: 0;
+  width: 40px;
+  aspect-ratio: 1;
+}
+
+.button-three {
+  display: none;
+  --button-color: var(--black);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button-three .hamburger {
+  transition: translate .25s, rotate .5s;
+}
+
+.button-three[aria-expanded="true"] .hamburger {
+  translate: 2px -2px;
+  rotate: 0.125turn;
+}
+
+.button-three .line {
+  transition: .3s;
+  stroke-dasharray: 60 31 60 300;
+}
+
+.button-three[aria-expanded="true"] .line {
+  stroke-dasharray: 60 105 60 300;
+  stroke-dashoffset: -90;
 }
 
 .header {
@@ -276,22 +316,6 @@ footer .footer-logo p {
   margin: 0;
 }
 
-@media only screen and (max-width: 815px) {
-  .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .aux-text {
-    text-align: center;
-  }
-
-  .main-text>* {
-    padding: 0;
-  }
-}
 
 @media only screen and (max-width: 525px) {
   .main-text>* {
@@ -306,4 +330,69 @@ footer .footer-logo p {
   .aux-text i svg {
     width: 15vw;
   }
+}
+
+@media only screen and (max-width: 815px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .aux-text {
+    text-align: center;
+  }
+
+  .main-text h1,
+  .main-text p {
+    padding-left: 0;
+  }
+
+  /* Navbar */
+  .button-three {
+    display: inline-block;
+    z-index: 9999;
+  }
+
+  .nav,
+  .btn {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-nav {
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    background-color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(0.5rem);
+    height: 100%;
+    width: 50%;
+    padding-top: 4rem;
+    gap: 2rem
+  }
+
+  .mobile-nav .nav {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .mobile-nav .btn {
+    background: 0;
+    color: var(--black);
+    font-family: Montserrat;
+    padding: 0 1rem;
+    margin: 0;
+  }
+
 }
