@@ -36,10 +36,6 @@ h5,
 h6 {
   text-align: center;
   font-family: 'Yeseva One';
-  /* width: fit-content; */
-  /* padding: 1rem 2rem; */
-  /* border-radius: 6px; */
-  /* box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px; */
 }
 
 .btn {
@@ -125,8 +121,6 @@ a {
 button {
   background: transparent;
   padding: 0;
-  /* border: 1.5px solid var(--button-color, #000);
-  border-radius: 0.5em; */
   border: 0;
   width: 40px;
   aspect-ratio: 1;
@@ -196,9 +190,6 @@ footer {
   background-color: var(--black);
   padding: 4rem 5vw;
   max-height: 305px;
-  /* position: absolute;
-  bottom: 0;
-  left: 0; */
 }
 
 footer .footer-links {
@@ -244,21 +235,18 @@ footer .footer-logo p {
 }
 
 @media only screen and (max-width: 440px) {
-
   footer .footer-logo img {
     width: 80vw;
   }
-
 }
 
 /* Hero Styles */
-
 .hero {
   width: 100%;
   max-width: 1200px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 2rem auto 8rem auto;
+  margin: 5rem auto 8rem auto;
 }
 
 .main-text,
@@ -317,7 +305,6 @@ footer .footer-logo p {
   margin: 0;
 }
 
-
 @media only screen and (max-width: 525px) {
   .main-text>* {
     text-align: center;
@@ -342,6 +329,7 @@ footer .footer-logo p {
   }
 
   .aux-text {
+    margin-top: 5rem;
     text-align: center;
   }
 
@@ -403,5 +391,4 @@ footer .footer-logo p {
     padding: 0 1rem;
     margin: 0;
   }
-
 }
