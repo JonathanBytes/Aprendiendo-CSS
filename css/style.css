@@ -60,6 +60,14 @@ main p {
   line-height: 2rem;
 }
 
+main .aux-text p {
+  font-size: inherit;
+  margin-bottom: inherit;
+  word-spacing: inherit;
+  line-height: inherit;
+
+}
+
 .home {
   display: flex;
   align-items: center;
@@ -261,7 +269,7 @@ footer .footer-logo p {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  max-width: 30rem;
+  max-width: 25rem;
 }
 
 .main-text>* {
@@ -390,8 +398,11 @@ footer .footer-logo p {
   }
 
   .aux-text {
-    margin-top: 5rem;
     text-align: center;
+  }
+
+  .main-text {
+    margin: 4rem 0 0;
   }
 
   .main-text h1,
