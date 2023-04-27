@@ -11,12 +11,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
+    <script src="../js/buttons.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Montserrat&family=Yeseva+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <a class="home" href="about:blank" target="_blank">
-            <img class="logo" decoding="async" loading="lazy" src="../assets/logo.png"
+            <img width="180" height="auto" class="logo" decoding="async" loading="lazy" src="../assets/logo.png"
                 alt="JonathanBytes personal logo">
         </a>
         <nav>
@@ -27,9 +32,27 @@
             </ul>
         </nav>
         <a class="btn" href="About:blank" target="_blank">Contáctame</a>
+        <div data-visible="false" class="mobile-nav" id="primary-navigation">
+            <nav>
+                <ul class="nav mobile">
+                    <li><a href="About:blank" target="_blank">Proyectos</a></li>
+                    <li><a href="About:blank" target="_blank">Sobre mí</a></li>
+                    <li><a href="About:blank" target="_blank">Otros</a></li>
+                </ul>
+            </nav>
+            <a class="btn mobile" href="About:blank" target="_blank">Contáctame</a>
+        </div>
+
+        <button class="button-three" aria-controls="primary-navigation" aria-expanded="false">
+            <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="40">
+                <path class="line" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"
+                    d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+                </path>
+            </svg>
+            <span class="sr-only">Menu</span>
+        </button>
     </header>
 
-    <body>
-    </body>
+</body>
 
 </html>

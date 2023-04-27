@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person img {
+    width: 100%;
+}
+
+.person {
+    width: 30rem;
+    position: relative;
+    transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.person-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: pink;
+    width: 100%;
+    aspect-ratio: 1 / 1.45;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 100vw 100vw;
+}
+
+.person-img {
+    position: absolute;
+    width: 60%;
+    bottom: -70px;
+    z-index: 2;
+    transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.person-circle {
+    position: absolute;
+    aspect-ratio: 1;
+    bottom: 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.person-img:hover {
+    transform: scale(1.05) translateY(-2rem);
+}
+
+.person:hover {
+    transform: scale(1.01);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+}

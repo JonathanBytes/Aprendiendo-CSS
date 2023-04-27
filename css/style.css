@@ -246,7 +246,8 @@ footer .footer-logo p {
   max-width: 1200px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 5rem auto 8rem auto;
+  align-items: center;
+  margin: 1rem auto 4rem auto;
 }
 
 .main-text,
@@ -260,6 +261,7 @@ footer .footer-logo p {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  max-width: 30rem;
 }
 
 .main-text>* {
@@ -305,6 +307,61 @@ footer .footer-logo p {
   margin: 0;
 }
 
+/* Aux text img */
+
+/* .aux-text img {
+  max-width: 80%;
+  display: block;
+} */
+
+.person img {
+  width: 100%;
+}
+
+.person {
+  width: 80%;
+  position: relative;
+  transition: transform 800ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.person-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: pink; */
+  width: 100%;
+  aspect-ratio: 1 / 1.45;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 100vw 100vw;
+}
+
+.person-img {
+  position: absolute;
+  width: 60%;
+  bottom: -70px;
+  z-index: 2;
+  transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.person-circle {
+  rotate: -30deg;
+  opacity: 90%;
+  position: absolute;
+  aspect-ratio: 1;
+  bottom: 0;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.person-img:hover {
+  transform: scale(1.06) translateY(-1.5vw);
+}
+
+.person:hover {
+  transform: scale(1.02);
+}
+
 @media only screen and (max-width: 525px) {
   .main-text>* {
     text-align: center;
@@ -326,6 +383,10 @@ footer .footer-logo p {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .person {
+    width: 50%;
   }
 
   .aux-text {
