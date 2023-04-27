@@ -14,4 +14,4 @@ var options = {
     loop: true,
 };
 
-var typed = new Typed('.main-text p', options);
+var typed = new Typed('.main-text .alt-text', options);
