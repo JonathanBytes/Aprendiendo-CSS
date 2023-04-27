@@ -3,4 +3,4 @@ Proyectos relacionados con mi aprendizaje en el lenguaje de CSS, usando el edito
 
 ## Host de la página
 Aquí puedes encontrar el enlace donde esta página está subida:
-https://jonathanbytes.github.io/Aprendiendo-CSS/
+https://aprendiendo-css.vercel.app/
