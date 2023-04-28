@@ -8,6 +8,9 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         selectors: resolve(__dirname, 'selectors/selectors.html'),
+        waysToIncludeCSS: resolve(__dirname, 'waysToIncludeCSS/includeCSS.html'),
+        sintaxis: resolve(__dirname, 'sintaxis/CSSsyntaxis.html'),
+        media: resolve(__dirname, 'media/media.html')
       },
     },
   },
