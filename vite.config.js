@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         selectors: resolve(__dirname, 'selectors/selectors.html'),
+        simpleSelectors: resolve(__dirname, 'selectors/simpleSelectors.html'),
         waysToIncludeCSS: resolve(__dirname, 'waysToIncludeCSS/includeCSS.html'),
         syntaxis: resolve(__dirname, 'syntaxis/CSSsyntaxis.html'),
         media: resolve(__dirname, 'media/media.html'),
@@ -16,6 +17,7 @@ export default defineConfig({
         footer: resolve(__dirname, 'media/footer.html'),
         about_me: resolve(__dirname, 'media/about-me.html'),
         buttons: resolve(__dirname, 'media/buttons/buttons.html'),
+        buttonsTest: resolve(__dirname, 'js/buttonsTest.js'),
       },
     },
   },
