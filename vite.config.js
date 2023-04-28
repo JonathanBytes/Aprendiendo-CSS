@@ -10,7 +10,8 @@ export default defineConfig({
         selectors: resolve(__dirname, 'selectors/selectors.html'),
         waysToIncludeCSS: resolve(__dirname, 'waysToIncludeCSS/includeCSS.html'),
         syntaxis: resolve(__dirname, 'syntaxis/CSSsyntaxis.html'),
-        media: resolve(__dirname, 'media/media.html')
+        media: resolve(__dirname, 'media/media.html'),
+        media: resolve(__dirname, 'media/home.html')
       },
     },
   },
