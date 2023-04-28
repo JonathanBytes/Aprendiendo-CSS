@@ -2,6 +2,8 @@
   --black: #282828;
   --blue: #6ba4a7;
   --white: #fff;
+  --purple: #b16286;
+  --purple-alt: #d3869b;
   --animation-duration: 0.15s
 }
 
@@ -337,6 +339,14 @@ footer .footer-logo p {
 
 .aux-text i svg {
   width: 3rem;
+  overflow: hidden;
+  background-clip: border-box;
+  fill: #ffffff00;
+  transition: fill var(--animation-duration) ease-in-out;
+}
+
+.aux-text i svg:hover {
+  fill: var(--purple)
 }
 
 .aux-text h2 {
