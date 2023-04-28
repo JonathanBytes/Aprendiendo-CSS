@@ -277,9 +277,10 @@ footer .footer-logo p {
 }
 
 .variation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--white);
-  grid-template-columns: 1fr;
-  justify-items: center;
   background-image: url(../assets/interior.jpg);
   object-fit: cover;
   background-size: cover;
@@ -296,6 +297,11 @@ footer .footer-logo p {
 
 .main-text {
   padding: 2rem;
+}
+
+.variant { 
+  margin: 0;
+  padding: 0;
 }
 
 .aux-text {
@@ -447,6 +453,10 @@ footer .footer-logo p {
 
   .main-text {
     margin: 4rem 0 0;
+  }
+
+  .variant {
+    margin: 0;
   }
 
   /* Navbar */
