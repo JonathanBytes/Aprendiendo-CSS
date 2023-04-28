@@ -11,7 +11,11 @@ export default defineConfig({
         waysToIncludeCSS: resolve(__dirname, 'waysToIncludeCSS/includeCSS.html'),
         syntaxis: resolve(__dirname, 'syntaxis/CSSsyntaxis.html'),
         media: resolve(__dirname, 'media/media.html'),
-        home: resolve(__dirname, 'media/home.html')
+        home: resolve(__dirname, 'media/home.html'),
+        header: resolve(__dirname, 'media/header.html'),
+        footer: resolve(__dirname, 'media/footer.html'),
+        about_me: resolve(__dirname, 'media/about-me.html'),
+        buttons: resolve(__dirname, 'media/buttons/buttons.html'),
       },
     },
   },
