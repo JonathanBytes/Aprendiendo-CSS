@@ -109,10 +109,11 @@ a {
 }
 
 .nav li {
+  text-align: center;
   position: relative;
 }
 
-.nav a::before {
+.nav li .first-a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -126,7 +127,7 @@ a {
   border-radius: 6px;
 }
 
-.nav a:hover::before {
+.nav .first-a:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
@@ -135,6 +136,78 @@ a {
   display: inline-block;
   margin: 7px 15px;
 }
+
+.nav .dropmenu-svg {
+  width: 0.6rem;
+}
+
+.nav li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: white;
+}
+
+.nav li:hover>.dropdown,
+.nav li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 150px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  box-shadow: 0px 3px 5px -1px #cccccc52;
+}
+
+/* 
+.nav li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+} */
+
+.nav li .primary li a:hover {
+  padding-left: 10px;
+  border-left: 3px solid var(--blue);
+  transition: padding 0.3s ease;
+}
+
+.nav li ul li a {
+  transition: padding 0.5s ease;
+}
+
+ul .other {
+  cursor: default
+}
+
+.mobile li:hover>.dropdown,
+.mobile li ul:hover {
+  box-shadow: none;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 1rem;
+  min-width: fit-content;
+  text-align: center;
+  background: none;
+}
+
+.mobile .dropdown li {
+  margin-bottom: 1rem;
+}
+
+
+
+
+
 
 .btn {
   background-color: var(--black);
@@ -273,7 +346,8 @@ footer .footer-logo p {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-items: stretch;
-  margin: 1rem auto 4rem auto;
+  margin: auto auto 4rem auto;
+  padding-top: 1rem;
 }
 
 .variation {
@@ -287,6 +361,7 @@ footer .footer-logo p {
   height: 60vh;
   background-position: center;
   max-width: none;
+  padding-top: 0;
 }
 
 .variation p {
@@ -299,7 +374,7 @@ footer .footer-logo p {
   padding: 2rem;
 }
 
-.variant { 
+.variant {
   margin: 0;
   padding: 0;
 }
