@@ -12,3 +12,14 @@ Para iniciar el entorno de desarrollo basta con ejecutar:
 npm install
 npm run dev
 ```
+
+## TODO
+
+- [ ] Modularizar el CSS
+    - [ ] Header
+    - [ ] Main content
+    - [ ] Footer
+    - [ ] Global
+- [ ] Landing page de blog
+- [ ] Estilos de un post
+- [ ] Maquetar la galería
